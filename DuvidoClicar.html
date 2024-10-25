@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer namorar comigo?</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style-bea.css">
+    <link rel="stylesheet" href="DuvidoClicar.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><i class="fa-solid fa-heart" id="logo"> B+T</i></a>
+
+            <ul type="none" class="list">
+                <a href="teste (1).html" rel="previous" target="_self">
+                    <li class="list-item active">ínicio</li>
+                </a>
+                <a href="DuvidoClicar.html" target="_self" rel="next">
+                    <li class="list-item">Dúvido Clicar</li>
+                </a>
+                <a href="#">
+                    <li class="list-item">Item 3</li>
+                </a>
+                <a href="clicaAi.html">
+                    <li class="list-item">Clica aí</li>
+                </a>
+
+            </ul>
+
+            <button class="mobile-btn" type="button"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+
+        <div id="mobile">
+            <ul class="mobile-list">
+
+                <a href="teste (1).html">
+                    <li class="mobile-item">Ínicio</li>
+                </a>
+                <a href="DuvidoClicar.html" rel="previous" target="_self">
+                    <li class="mobile-item">Dúvido clicar</li>
+                </a>
+                <a href="#">
+                    <li class="mobile-item">Item 3</li>
+                </a>
+                <a href="clicaAi.html" target="_self">
+                    <li class="mobile-item">Clica aí</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="quadro">
+            <h1>Quer namorar comigo?</h1>
+           <div class="conteudo"> 
+           
+           <picture id="alianca-pic">
+            <img id="foto-alianca" src="fotos/presentes-001/presentes/alianca.jpg" alt="aliança">
+           </picture>
+
+            <div class="botoes">
+
+                <a href="sim.html" rel="internal" target="_self"><button id="sim" type="button">SIM</button></a>
+                <button onmouseover="fugir()" id="nao" type="button">NÃO</button>
+            </div>
+        
+           </div>
+        </section>
+    </main>
+
+    <script>
+        function fugir(){
+    var nao = document.getElementById("nao")
+
+    var largura = window.innerWidth;
+    var altura = window.innerHeight;
+    
+    var maX = largura - nao.offsetWidth;
+    var maY = altura - nao.offsetHeight;
+
+    var aleatorio = Math.floor(Math.random()* maX);
+    var aleatorioY = Math.floor(Math.random() * maY);
+
+    nao.style.left= aleatorio +"px";
+    nao.style.top = aleatorioY +"px";
+    }
+    </script>
+
+ <script src="script.js"></script>
+</body>
+</html>
