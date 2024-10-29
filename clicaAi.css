@@ -1,0 +1,154 @@
+*{padding: 0;
+margin: 0;
+}
+
+
+
+
+.presentes{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #db4bd6aa;
+    padding-bottom:80px;
+}
+
+.fotos-circulo{
+    width: 80%;
+    height: 30vh;
+    border-radius: 50%;
+
+}
+
+figure{
+    text-align: center;
+    width: 50%;
+    padding-top: 50px;
+}
+
+figcaption>p{
+margin-top: 4vh;
+text-align: center;
+
+}
+
+figcaption{
+    font-size: 0.8em;
+    background-color: #5f0ddbbb;
+    height: 20vh;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    
+}
+
+.presentes-parte2{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;  
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.fig-parte2{
+    background-color: #5f0ddbbb;
+}
+
+
+.fig-parte3{
+    background-color: #5f0ddbbb;
+}
+
+
+
+.presentes-mobile{
+
+    margin-bottom: 60px;
+    margin-top: 60px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #db4bd6aa;
+    padding-bottom:80px;
+}
+
+.presentes-parte2-mobile{
+    display: none;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: white;
+    padding-bottom:80px;
+}
+
+.parte3{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+@media(max-width:768px) {
+
+    .presentes{
+     display: none;
+    }
+
+    .presentes-parte2{
+        display: none;
+    }
+
+
+    .presentes-parte2-mobile{
+        display: block;
+        margin-bottom: 60px;
+        margin-top: 60px;
+        background-color: white;
+        padding-bottom:80px;
+        
+    
+    }
+    
+    .presentes-mobile{
+
+        margin-bottom: 60px;
+        margin-top: 100px;
+        display: block;
+        background-color: #db4bd6aa;
+        padding-bottom:80px;
+    }
+
+    .fotos-circulo{
+        width: 40%;
+        height: 20vh;
+    }
+    
+    .fotos-circulo-mobile{
+    width: 90%;
+    border-radius: 50%;
+    height: 30vh;
+    }
+
+    .mobile-flex{
+        display: flex;
+
+    }
+
+    .fotos-circulo-exc{
+   
+        margin: auto;
+    }
+
+}
