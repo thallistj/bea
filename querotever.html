@@ -2,6 +2,8 @@
 <html lang="pt-BR">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horas para te reecontrar</title>
@@ -16,6 +18,24 @@
 
 <body>
 
+    <div class="janela-pop-up" id="pop-up">
+
+        <div class="conteudopop-up">
+            <h1>Nosso 1 ano está chegando</h1>
+            <p>Arrume suas coisas pq sexta feira to vindo te buscar para levar para um lugar especial <br>
+                Pega um bikini, umas roupas confortáveis e se divirta comigo, anjo.
+                <br>
+                Espero que goste das flores, e de tudo que preparei para nosso final de semana.
+            </p>
+
+            <button onclick="fecharpopup()">Te amo</button>
+
+            <div id="area-coracoes"></div>
+            
+        </div>  
+
+    </div>
+
     <header>
         <nav>
             <a href="teste (1).html"><i class="fa-solid fa-heart" id="logo"> B+T</i></a>
@@ -27,7 +47,7 @@
                 <a href="DuvidoClicar.html" target="_self" rel="next">
                     <li class="list-item">Dúvido Clicar</li>
                 </a>
-                <a href="#">
+                <a href="querotever.html">
                     <li class="list-item">Quero te ver</li>
                 </a>
                 <a href="clicaAi.html">
@@ -48,8 +68,8 @@
                 <a href="DuvidoClicar.html">
                     <li class="mobile-item">Dúvido clicar</li>
                 </a>
-                <a href="#">
-                    <li class="mobile-item">Item 3</li>
+                <a href="querotever.html">
+                    <li class="mobile-item">Quero te ver</li>
                 </a>
                 <a href="clicaAi.html">
                     <li class="mobile-item">Clica aí</li>
@@ -58,8 +78,41 @@
         </div>
     </header>
 
-  
-    <script src="script.js"></script>
+    <main id="principal">
+
+        <section class="slide">
+            <audio id="som" autoplay loop controls
+                src="musica/Jorge & Mateus - Seu Astral - [DVD Ao Vivo em Jurerê] - (Clipe Oficial) [SETK2maosQY].mp3"></audio>
+
+            <img class="fotos active" src="fotos/fotosslide/400x650desenho.PNG" alt="foto1">
+            <img class="fotos" src="fotos/fotosslide/400x650foto.jpg" alt="foto2">
+            <img class="fotos" src="fotos/fotosslide/600x500.webp" alt="foto3">
+            <img class="fotos" src="fotos/fotosslide/foto1.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos2.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos3.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos4.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos5.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotoa6.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos7.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos8.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos9.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos10.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos11.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos12.400.x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos13.400.650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos14.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos15.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos16.400x650IMG-20240526-WA0054.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos17.400x650.jpg" alt="">
+            <img class="fotos" src="fotos/fotosslide/fotos18.400x650.jpg" alt="">
+
+            <script src="scriptslide.js"></script>
+        </section>
+    </main>
+
+
+
 </body>
+<script src="script.js"></script>
 
 </html>
