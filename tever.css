@@ -22,8 +22,14 @@ padding: 60px;
 
 }
 .janela-pop-up{
-
-margin: 140px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.container-pop-up{
+  display: flex;
+ 
+  padding: 100px;
 }
 
 button{
